@@ -1,4 +1,4 @@
-html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,6 +47,18 @@ html
             cursor: pointer;
         }
 
+        .family-message {
+            max-width: 600px;
+            margin: 25px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            color: #123c69;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
         footer {
             background: #123c69;
             color: white;
@@ -65,12 +77,24 @@ html
     <main>
         <div class="card">
             <h1>Hello, Bro! 🚀</h1>
+
             <p>Welcome to my static HTML website.</p>
-            <p>This website is deployed using AWS CodePipeline,
-               CodeBuild, S3, and CodeDeploy.</p>
+
+            <p>
+                This website is deployed using AWS CodePipeline,
+                CodeBuild, S3, and CodeDeploy.
+            </p>
 
             <button onclick="showMessage()">Test Website</button>
+
             <p id="message"></p>
+        </div>
+
+        <div class="family-message">
+            <p>
+                Vimal, you did a great job! Your mother and family
+                are proud of you. Keep going, you are amazing! ❤️🚀
+            </p>
         </div>
     </main>
 
@@ -86,4 +110,3 @@ html
     </script>
 </body>
 </html>
-```
