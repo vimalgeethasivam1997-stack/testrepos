@@ -1,0 +1,89 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My DevOps Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            color: #222;
+            text-align: center;
+        }
+
+        header {
+            background: #123c69;
+            color: white;
+            padding: 25px;
+        }
+
+        main {
+            padding: 60px 20px;
+        }
+
+        h1 {
+            color: #123c69;
+        }
+
+        .card {
+            background: white;
+            max-width: 600px;
+            margin: 25px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background: #123c69;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #123c69;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>My DevOps Project</h2>
+        <p>Automated Website Deployment</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h1>Hello, Bro! 🚀</h1>
+            <p>Welcome to my static HTML website.</p>
+            <p>This website is deployed using AWS CodePipeline,
+               CodeBuild, S3, and CodeDeploy.</p>
+
+            <button onclick="showMessage()">Test Website</button>
+            <p id="message"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Powered by AWS | CI/CD Practice Project</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Bro, your website is working successfully!";
+        }
+    </script>
+</body>
+</html>
+```
